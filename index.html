@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Cambiar título -->
+    <title>Proyecto XXX</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="formTienda">
+    <!-- Cambiar título -->
+    <h3>Proyecto XXX</h3>
+      <table id="formTiendaTabla">
+        <tr>
+          <!-- Agregar encabezados de columnas -->
+          <th>Nombre</th>
+          <th>Tipo</th>
+          <th>Costo</th>
+          <th>Color</th>
+          <th>Básico</th>
+          <th>%Ganancia</th>
+          <th>%Descuento</th>
+          <th>Precio</th>
+        </tr>
+      </table>
+      <!-- Agregar salidas de clase mayor -->
+      <h5>Cantidad de víveres: <span id="formTiendaLblCantViveres">?</span></h5>
+      <h5>Cantidad de ropa: <span id="formTiendaLblCantRopa">?</span></h5>
+      <!-- Ajustar inner del botón -->
+      <button id="formTiendaBtAgregarViveres">Agregar Viveres</button>
+      <button id="formTiendaBtAgregarRopa">Agregar Ropa</button>
+    </section>
+
+    <section id="formMenor1">
+      <h3>Datos de ropa</h3>
+      <!-- Indicar inputs 
+        Ajustar placeholder -->
+        <input type="text" id="formMenor1InNombre" placeholder="Nombre"></input>
+        <input type="text" id="formMenor1InCosto" placeholder="Costo"></input>
+        <input type="text" id="formMenor1InColor" placeholder="Color"></input>
+        <button id="formMenor1BtAceptar">Aceptar</button> 
+    </section>
+
+    <section id="formMenor2">
+      <h3>Datos de viveres</h3>
+      <!-- Indicar inputs 
+        Ajustar placeholder -->
+        <input type="text" id="formMenor2InNombre" placeholder="Nombre"></input>
+        <input type="text" id="formMenor2InCosto" placeholder="Costo"></input>
+        <input type="text" id="formMenor2InBasico" placeholder="Básico"></input>
+        <button id="formMenor2BtAceptar">Aceptar</button> 
+    </section>
+
+  </body>
+  <script type="module">
+    import Cl_main from "./js/Cl_main.js";
+    // Quitar comentario antes de correr el programa
+        new Cl_main()
+ </script>
+</html>
